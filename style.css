@@ -91,12 +91,12 @@ body {
     color: #f0f0f0;
     font-weight: 300;
     margin: 10px;
-    font-size: min(2.3vmin, 17pt);
+    font-size: min(2.29vmin, 17pt);
     line-height: 1.42;
 }
 
 .bubble {
-    font-weight: 700;
+    font-weight: 800;
     color: rgba(0,0,0,0);
     -webkit-text-stroke-width: 0.31px;
     -webkit-text-stroke-color: #ffe3e0;
