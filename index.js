@@ -9,7 +9,7 @@ canvas.height = 480;
 ctx.lineWidth = 4;
 ctx.strokeStyle = "black";
 ctx.fillStyle = "black";
-let outputText = $('#textArea')[0];
+let outputText = $('#textOutput')[0];
 
 const worker = await Tesseract.createWorker("eng", 1, { logger: m => {} });
 
