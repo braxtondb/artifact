@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AI</title>
+    <title>Draw for AI!</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script> <!-- Source: tesseract -->
+    <script src="index.js" type="module"></script>
     <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
   </head>
   <body>
     <div id="root">
       <div id="topBanner"><p>AI That Can See</p></div>
+      <p id="abstract">Draw for AI! In the box below, draw any letters or words you like <br>and press 'Recognize' to have an AI attempt to read what you wrote!</p>
       <div id="reader-container">
         <div id="reader">
           <div>
             <canvas id="drawPad"></canvas>
             <button id="recognize">Recognize</button>
+            <button id="clear">Clear</button>
             <img src="arrow.png" id="arrow" alt="arrow">
-            <div id="textArea">Recognized:</div>
+            <div id="textArea"></div>
           </div>
         </div>
       </div>

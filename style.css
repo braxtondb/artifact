@@ -37,6 +37,13 @@ body {
     font-weight: 500;
 }
 
+#abstract {
+    position: absolute;
+    top: 12%;
+    font-size: min(2.9vmin, 21pt);
+    text-align: center;
+}
+
 #reader-container {
     width: min(968px, calc(100% - 50px));
     height: 0;
@@ -59,6 +66,7 @@ body {
     left: 2.3%;
     top: 5%;
     background: white;
+    border-radius: 7px;
 }
 
 #recognize {
@@ -81,8 +89,27 @@ body {
     background-color: #d67a38;
 }
 
-/* 185 x 414 */
+#clear {
+    position: absolute;
+    width: 15%;
+    height: 12%;
+    left: 46%;
+    top: 21%;
+    color: white;
+    font-size: min(2.7vw, 24pt);
+    padding: 0;
+    background-color: #5dd0f0;
+    border-radius: 6px;
+    border: none;
+}
+#clear:hover {
+    background-color: #7eddf2;
+}
+#clear:active {
+    background-color: #5cb7db;
+}
 
+/* 185 x 414 */
 #arrow {
     position: absolute;
     width: 8.94%;
@@ -100,6 +127,8 @@ body {
     background: rgba(0,0,0,0.5);
     border-radius: 25px;
     color: white;
-    padding-left: 15px;
-    padding-top: 9px;
+    padding: 18px 24px;
+    white-space: pre;
+    font-size: min(3.1vw, 29pt);
+    overflow: auto;
 }
